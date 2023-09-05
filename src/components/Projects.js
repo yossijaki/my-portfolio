@@ -1,4 +1,5 @@
 import { Col, Container, Row } from "react-bootstrap";
+import { ProjectCard } from "./ProjectCard";
 
 export const Projects = () => {
     const projects = [
