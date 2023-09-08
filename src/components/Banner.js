@@ -1,7 +1,9 @@
-import {useState, useEffect} from "react";
+import { useState, useEffect } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import headerImg from "../assets/img/header-img.svg"
+import 'animate.css';
+import TrackVisibility from 'react-on-screen';
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
@@ -11,12 +13,12 @@ export const Banner = () => {
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
 
-    useEffect(()=> {
+    useEffect(() => {
         let ticker = setInterval(() => {
             tick();
         }, delta)
 
-        return () => { clearInterval(ticker)};
+        return () => { clearInterval(ticker) };
     }, [text])
 
     const tick = () => {
@@ -45,10 +47,15 @@ export const Banner = () => {
             <Container>
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
-                        <span className="tagline">Welcome to my Portfolio</span>
-                        <h1>{`Hey! I'm Yossijaki, Software `}<span className="wrap">{text}</span></h1>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        <button onClick={() => console.log('connect')}>Let's connect <ArrowRightCircle size={25}/></button>
+                        <TrackVisibility>
+                            {({ isVisible }) =>
+                                <div className={isVisible ? "animate__animated animate__fadeInUp" : ""}>
+                                    <span className="tagline">Welcome to my Portfolio</span>
+                                    <h1>{`Hey! I'm Yossijaki, Software `}<span className="wrap">{text}</span></h1>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <button onClick={() => console.log('connect')}>Let's connect <ArrowRightCircle size={25} /></button>
+                                </div>}
+                        </TrackVisibility>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Header Image" />
