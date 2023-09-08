@@ -5,7 +5,7 @@ export const Newsletter = ({ onValidated, status, message }) => {
     const [email, setEmail] = useState('');
 
     useEffect(() => {
-        if (status === 'success') clearFields()
+        if (status === 'success') clearFields();
     }, [status])
 
     const handleSubmit = (e) => {
@@ -34,7 +34,7 @@ export const Newsletter = ({ onValidated, status, message }) => {
                     <Col md={6} xl={7}>
                         <form onSubmit={handleSubmit}>
                             <div className="new-email-bx">
-                                <input value={email} type="email" onChange={(e) => setEmail(e.target.value)} placeholder="Email address" />
+                                <input value={email} type="email" onChange={(e) => setEmail(e.target.value)} placeholder="Email Address" />
                                 <button type="submit">Submit</button>
                             </div>
                         </form>
