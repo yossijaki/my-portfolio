@@ -270,7 +270,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	font-weight: 700;
 	letter-spacing: 0.8px;
 	line-height: 1;
-	margin-bottom: 20px;
 	display: block;
 }
 .banner p {
@@ -314,6 +313,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .txt-rotate > .wrap {
 	border-right: 0.08em solid #666;
+}
+
+.banner span {
+	font-weight: 700;
+	margin-bottom: 20px;
 }
 
 /************ Skills Css ************/
