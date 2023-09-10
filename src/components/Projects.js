@@ -46,7 +46,7 @@ export const Projects = () => {
 			<Container>
 				<Row>
 					<Col>
-						<TrackVisibility>
+						<TrackVisibility once>
 							{({ isVisible }) => 
 								<div className={ isVisible ? "animate__animated animate__fadeInUp" : ""}>
 									<h2>Projects</h2>
