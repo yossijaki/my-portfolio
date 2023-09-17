@@ -15,17 +15,19 @@ export const Banner = () => {
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeInUp" : ""}>
                                     <span className="tagline">Welcome to my Portfolio</span>
-                                    <h1>{`Hey! I'm Yossijaki, `}</h1>
+                                    <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">{`Hey! I'm`}</h1>
                                     <TypeAnimation 
                                             sequence={[
-                                                'Software Developer', // Types 'One'
+                                                'Developer', // Types 'One'
                                                 2000, // Waits 2s
-                                                'Front D', // Deletes 'One' and types 'Two'
+                                                'Frontend', // Deletes 'One' and types 'Two'
                                                 300, // Waits 3ms
-                                                'Backend Dev',
-                                                300, // Waits 3ms
-                                                'FullStack Developer',
-                                                2000, // Waits 2s
+                                                'Backend',
+                                                200, // Waits 3ms
+                                                'FullStack',
+                                                1200, // Waits 1.5s
+                                                'Yossijaki',
+                                                2000,
                                                 () => {
                                                     console.log('Sequence completed');
                                                 },
