@@ -37,7 +37,7 @@ export const Banner = () => {
                                             repeat={Infinity}
                                             style={{ fontSize: '65px', display: 'inline-block' }}
                                         />
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <p>I'm a little too much multifaceted person, I know different things from different areas and I apply those knowledges to my day to day life, not only at work but also on every activity I do on my life and I love it! Because those knowledges have taken me to where I am now and I hope way more far.</p>
                                     <button onClick={() => console.log('connect')}>Let's connect <ArrowRightCircle size={25} /></button>
                                 </div>}
                         </TrackVisibility>

@@ -36,23 +36,35 @@ export const Skills = () => {
                             <h2>
                                 Skills
                             </h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, dolore.<br></br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui, aspernatur.</p>
+                            <p>Over the years I've stacked pretty decent knowledge in few of the most popular programming technologies (currently) in the area, but sure there are lot of things I forgot to mention here, so please feel free to reach me out if you have any concern about my experience:</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                               <div className="item">
                                 <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <h5>Spring Boot</h5>
                               </div>
                               <div className="item">
                                 <img src={meter2} alt="Image" />
-                                <h5>Brand Identity</h5>
-                              </div>
-                              <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Logo Design</h5>
+                                <h5>MySQL Databases</h5>
                               </div>
                               <div className="item">
                                 <img src={meter1} alt="Image" />
-                                <h5>Web Developmnt</h5>
+                                <h5>Node.js</h5>
+                              </div>
+                              <div className="item">
+                                <img src={meter1} alt="Image" />
+                                <h5>React</h5>
+                              </div>
+                              <div className="item">
+                                <img src={meter1} alt="Image" />
+                                <h5>Bootsrap</h5>
+                              </div>
+                              <div className="item">
+                                <img src={meter1} alt="Image" />
+                                <h5>Angular</h5>
+                              </div>
+                              <div className="item">
+                                <img src={meter1} alt="Image" />
+                                <h5>Graphic Design</h5>
                               </div>
                             </Carousel>
                         </div>
