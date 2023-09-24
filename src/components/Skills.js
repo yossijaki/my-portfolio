@@ -43,15 +43,15 @@ export const Skills = () => {
                                 <h5>Spring Boot</h5>
                               </div>
                               <div className="item">
-                                <img src={meter2} alt="Image" />
+                                <img src={meter1} alt="Image" />
                                 <h5>MySQL Databases</h5>
                               </div>
                               <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter2} alt="Image" />
                                 <h5>Node.js</h5>
                               </div>
                               <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter3} alt="Image" />
                                 <h5>React</h5>
                               </div>
                               <div className="item">
@@ -59,11 +59,11 @@ export const Skills = () => {
                                 <h5>Bootsrap</h5>
                               </div>
                               <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter2} alt="Image" />
                                 <h5>Angular</h5>
                               </div>
                               <div className="item">
-                                <img src={meter1} alt="Image" />
+                                <img src={meter3} alt="Image" />
                                 <h5>Graphic Design</h5>
                               </div>
                             </Carousel>

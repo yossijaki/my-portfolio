@@ -14,7 +14,7 @@ export const Banner = () => {
                         <TrackVisibility once>
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeInUp" : ""}>
-                                    <span className="tagline">Welcome to my Portfolio</span>
+                                    <span className="tagline">Welcome to my space</span>
                                     <h1 className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">{`Hey! I'm`}</h1>
                                     <TypeAnimation 
                                             sequence={[
