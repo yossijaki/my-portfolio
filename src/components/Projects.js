@@ -1,5 +1,6 @@
 import { Col, Container, Row, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
+import { UnderConstruction } from "./UnderConstruction";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
@@ -47,8 +48,8 @@ export const Projects = () => {
 				<Row>
 					<Col>
 						<TrackVisibility once>
-							{({ isVisible }) => 
-								<div className={ isVisible ? "animate__animated animate__fadeInUp" : ""}>
+							{({ isVisible }) =>
+								<div className={isVisible ? "animate__animated animate__fadeInUp" : ""}>
 									<h2>Projects</h2>
 									<p>This is a collection of projects I made clasified by the different technologies in which they were built. Please note that "Vanilla" projects include different languages/technologies without the use of frameworks nor environments</p>
 								</div>
@@ -78,8 +79,16 @@ export const Projects = () => {
 										})}
 									</Row>
 								</Tab.Pane>
-								<Tab.Pane eventKey="second">Second tab content</Tab.Pane>
-								<Tab.Pane eventKey="third">Third tab content</Tab.Pane>
+								<Tab.Pane eventKey="second">
+									<Row>
+										<UnderConstruction></UnderConstruction>
+									</Row>
+								</Tab.Pane>
+								<Tab.Pane eventKey="third">
+									<Row>
+										<UnderConstruction></UnderConstruction>
+									</Row>
+								</Tab.Pane>
 							</Tab.Content>
 						</Tab.Container>
 					</Col>
