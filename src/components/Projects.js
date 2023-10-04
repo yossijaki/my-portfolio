@@ -50,7 +50,7 @@ export const Projects = () => {
 							{({ isVisible }) => 
 								<div className={ isVisible ? "animate__animated animate__fadeInUp" : ""}>
 									<h2>Projects</h2>
-									<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.Architecto vel et dolore reiciendis, nihil laborum!</p>
+									<p>This is a collection of projects I made clasified by the different technologies in which they were built. Please note that "Vanilla" projects include different languages/technologies without the use of frameworks nor environments</p>
 								</div>
 							}
 						</TrackVisibility>
@@ -61,13 +61,13 @@ export const Projects = () => {
 								id="pills-tab"
 							>
 								<Nav.Item>
-									<Nav.Link eventKey="first">Tab 1</Nav.Link>
+									<Nav.Link eventKey="first">React</Nav.Link>
 								</Nav.Item>
 								<Nav.Item>
-									<Nav.Link eventKey="second">Tab 2</Nav.Link>
+									<Nav.Link eventKey="second">Spring</Nav.Link>
 								</Nav.Item>
 								<Nav.Item>
-									<Nav.Link eventKey="third">Tab 3</Nav.Link>
+									<Nav.Link eventKey="third">Vanilla</Nav.Link>
 								</Nav.Item>
 							</Nav>
 							<Tab.Content>
