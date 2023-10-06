@@ -507,7 +507,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	z-index: -4;
 }
 
-/************ Projects Css ************/
+.work-in-progress {
+	margin-top: 2em;
+	margin-bottom: 5em;
+	text-align: center;
+}
+.work-in-progress img {
+	height: 30%;
+	width: 30%;
+}
+
+/************ Contact Css ************/
 .contact {
 	background: linear-gradient(90.21deg, #aa367c -5.91%, #4a2fbd 111.58%);
 	padding: 60px 0 200px 0;
